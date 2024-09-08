@@ -1,70 +1,92 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌍 Routenfinder - Wegberechnung 🌍
 
-## Available Scripts
+Dieses Projekt wurde mit [Create React App](https://github.com/facebook/create-react-app) erstellt.
 
-In the project directory, you can run:
+**Routenfinder - Wegberechnung** ist eine React-Anwendung, die es ermöglicht, Routen und Pfade innerhalb einer Anwendung effizient auszugeben.
 
-### `npm start`
+## 📑 Inhaltsverzeichnis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [Installation](#installation)
+2. [Nutzung](#nutzung)
+3. [Verfügbare Skripte](#verfügbare-skripte)
+4. [Tests](#tests)
+    - [Akzeptanztests](#akzeptanztests)
+5. [Verwendete Technologien](#verwendete-technologien)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Installation
+Folge diesen Schritten, um die Anwendung lokal zu installieren:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. **Projekt klonen**
+Klone das Repository auf deinen lokalen Rechner:
+   ```bash
+   git clone https://github.com/dein-username/karten-daten-service.git
+   cd karten-daten-service
+   ```
+#### 1.1 **Abhängigkeiten installieren**
 
-### `npm run build`
+Stelle sicher, dass sich dein Terminal im Verzeichnis des Projekts befindet, und führe dann den folgenden Befehl aus:
+   ```bash
+    npm install
+   ```
+Dieser Befehl installiert alle erforderlichen Bibliotheken und Abhängigkeiten, die in der package.json definiert sind.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 **Start der Anwendung**
+Nach erfolgreicher Installation der Abhängigkeiten kannst du die Anwendung im Entwicklungsmodus starten:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Die Anwendung wird daraufhin in deinem Standardbrowser geöffnet. Änderungen an den Dateien führen automatisch zu einem Neuladen der Seite.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Um eine optimierte Version der Anwendung für den Produktionseinsatz zu erstellen, nutze:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Die optimierte Anwendung wird im Verzeichnis `build` abgelegt.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔧 Tests
+### Akzeptanztests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Die Akzeptanztests werden mit **Gauge** und **Taiko** durchgeführt. Um diese Tests zu starten, verwende folgenden Befehl:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run acceptance-tests
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚙️ Verfügbare Skripte
+Die folgenden Skripte sind in der `package.json` hinterlegt und dienen zur Verwaltung und Entwicklung der Anwendung:
 
-### Analyzing the Bundle Size
+- **Start der Entwicklungsumgebung**:  
+  Führe das Skript `npm start` aus, um die Anwendung im Entwicklungsmodus zu starten.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Erstellung der Produktionsversion**:  
+  Nutze `npm run build`, um eine optimierte Version der Anwendung für die Produktion zu generieren.
 
-### Making a Progressive Web App
+- **Ausführung der Testsuite**:  
+  Starte die Tests mit `npm test`, um sicherzustellen, dass alle Komponenten korrekt funktionieren.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Durchführung von Akzeptanztests**:  
+  Verwende `npm run acceptance-tests`, um End-to-End-Akzeptanztests mithilfe von Gauge und Taiko auszuführen.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 💻 Verwendete Technologien
+Die Anwendung basiert auf diesen Webtechnologien:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **React**: Eine JavaScript-Bibliothek zur Erstellung benutzerfreundlicher Oberflächen.
+- **Gauge & Taiko**: Werkzeuge für End-to-End-Akzeptanztests.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
