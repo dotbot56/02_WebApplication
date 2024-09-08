@@ -22,8 +22,7 @@ Folge diesen Schritten, um die Anwendung lokal zu installieren:
 ### 1. **Projekt klonen**
 Klone das Repository auf deinen lokalen Rechner:
    ```bash
-   git clone https://github.com/dein-username/karten-daten-service.git
-   cd karten-daten-service
+   git clone https://github.com/dotbot56/02_WebApplication.git
    ```
 #### 1.1 **Abhängigkeiten installieren**
 
@@ -78,7 +77,7 @@ Die folgenden Skripte sind in der `package.json` hinterlegt und dienen zur Verwa
   Starte die Tests mit `npm test`, um sicherzustellen, dass alle Komponenten korrekt funktionieren.
 
 - **Durchführung von Akzeptanztests**:  
-  Verwende `npm run acceptance-tests`, um End-to-End-Akzeptanztests mithilfe von Gauge und Taiko auszuführen.
+  Verwende `npm run test`, um End-to-End-Akzeptanztests mithilfe von Gauge und Taiko auszuführen.
 
 
 ---
